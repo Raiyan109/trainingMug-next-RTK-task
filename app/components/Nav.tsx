@@ -16,15 +16,29 @@ export const Nav = () => {
         className={`${styles.link} ${pathname === '/' ? styles.active : ''}`}
         href="/"
       >
-        Home
+        Photos
       </Link>
       <Link
-        className={`${styles.link} ${
-          pathname === '/verify' ? styles.active : ''
-        }`}
-        href="/verify"
+        className={`${styles.link} ${pathname === '/posts' ? styles.active : ''
+          }`}
+        href="/posts"
       >
-        Verify
+        Posts
+      </Link>
+      <Link
+        className={`${styles.link} ${pathname === '/savedPhotos' ? styles.active : ''
+          }`}
+        href="/savedPhotos"
+      >
+        Saved Photos
+      </Link>
+
+      <Link
+        className={`${styles.link} ${pathname === '/savedPosts' ? styles.active : ''
+          }`}
+        href="/savedPosts"
+      >
+        Saved Posts
       </Link>
     </nav>
   )

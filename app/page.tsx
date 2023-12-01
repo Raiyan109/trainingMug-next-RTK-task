@@ -1,8 +1,8 @@
 /* Components */
-import { Counter } from './components/Counter/Counter'
+import { Photos } from './components/Photos/Photos'
 
 export default function IndexPage() {
-  return <Counter />
+  return <Photos />
 }
 
 export const metadata = {
